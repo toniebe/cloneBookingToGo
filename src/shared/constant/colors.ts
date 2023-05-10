@@ -1,4 +1,4 @@
-const darkBlue = '#2786E4';
+const darkBlue = '#335997';
 const skyBlue = '#B9F5FF';
 const darkBrown = '#E19E05';
 const darkGrey = '#717171';
