@@ -1,7 +1,7 @@
 import {Image, StyleSheet, TextInput, TextInputProps, View} from 'react-native';
 import React, {useState} from 'react';
-import {scale, verticalScale} from '@helper/scaling';
-import {darkBlue, mediumGrey} from '@constants/colors';
+import {scale, verticalScale} from '@sharedHelper/scaling';
+import {darkBlue, mediumGrey} from '@sharedConstants/colors';
 
 export interface textinputCustomProps {
   secureTextEntry?: boolean;

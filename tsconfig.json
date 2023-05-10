@@ -7,16 +7,16 @@
       "@assets/*": [
         "./src/shared/assets/*"
       ],
-      "@components/*": [
+      "@sharedComponents/*": [
         "./src/shared/components/*"
       ],
-      "@constants/*": [
+      "@sharedConstants/*": [
         "./src/shared/constant/*"
       ],
       "@container/*": [
         "./src/core/container/*"
       ],
-      "@helper/*": [
+      "@sharedHelper/*": [
         "./src/shared/helper/*"
       ],
       "@presenter/*": [

@@ -1,5 +1,5 @@
-import {darkBlue, white} from '@constants/colors';
-import {scale} from '@helper/scaling';
+import {darkBlue, white} from '@sharedConstants/colors';
+import {scale} from '@sharedHelper/scaling';
 import {BaseToast, ErrorToast} from 'react-native-toast-message';
 
 export const toastConfig = {

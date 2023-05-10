@@ -6,8 +6,8 @@ import {
   TouchableOpacityProps,
 } from 'react-native';
 import React from 'react';
-import {scale, verticalScale} from '@helper/scaling';
-import {darkBlue, white} from '@constants/colors';
+import {scale, verticalScale} from '@sharedHelper/scaling';
+import {darkBlue, white} from '@sharedConstants/colors';
 
 interface ButtonProps {
   type: 'primary' | 'secondary';

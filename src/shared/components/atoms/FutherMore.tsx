@@ -1,7 +1,7 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import {scale} from '@helper/scaling';
-import {darkBrown} from '@constants/colors';
+import {scale} from '@sharedHelper/scaling';
+import {darkBrown} from '@sharedConstants/colors';
 
 interface FutherMoreProps {
   title: string;
