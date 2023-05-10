@@ -1,0 +1,27 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": [
+        "./src/shared/assets/*"
+      ],
+      "@components/*": [
+        "./src/shared/components/*"
+      ],
+      "@constants/*": [
+        "./src/shared/constant/*"
+      ],
+      "@container/*": [
+        "./src/core/container/*"
+      ],
+      "@helper/*": [
+        "./src/shared/helper/*"
+      ],
+      "@presenter/*": [
+        "./src/core/presenter/*"
+      ],
+    }
+  }
+}
