@@ -11,7 +11,7 @@ module.exports = {
           '@sharedConstants': './src/shared/constant',
           '@container': './src/core/container',
           '@sharedHelper': './src/shared/helper',
-          '@presenter': './src/core/presenter',
+          '@presentation': './src/core/presentation',
           '@sharedAssets': './src/shared/assets',
         },
       },

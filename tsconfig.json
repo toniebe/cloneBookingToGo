@@ -4,7 +4,7 @@
     "jsx": "react",
     "baseUrl": ".",
     "paths": {
-      "@assets/*": [
+      "@sharedAssets/*": [
         "./src/shared/assets/*"
       ],
       "@sharedComponents/*": [
@@ -19,8 +19,8 @@
       "@sharedHelper/*": [
         "./src/shared/helper/*"
       ],
-      "@presenter/*": [
-        "./src/core/presenter/*"
+      "@presentation/*": [
+        "./src/core/presentation/*"
       ],
     }
   }

@@ -1,12 +1,12 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {scale} from '@sharedHelper/scaling';
-import {darkBrown} from '@sharedConstants/colors';
+import {mediumGrey} from '@sharedConstants/colors';
 
 interface FutherMoreProps {
   title: string;
   nextTitle: string;
-  actionNextTitle: any;
+  actionNextTitle?: any;
 }
 
 const FutherMore = ({
@@ -17,7 +17,10 @@ const FutherMore = ({
   return (
     <View style={styles.container}>
       <Text style={styles.textTitle}>{title}</Text>
-      <TouchableOpacity onPress={actionNextTitle} style={styles.nextContainer}>
+      <TouchableOpacity
+        onPress={actionNextTitle}
+        disabled
+        style={styles.nextContainer}>
         <Text style={styles.textNextTitle}>{nextTitle}</Text>
       </TouchableOpacity>
     </View>
@@ -43,7 +46,7 @@ const styles = StyleSheet.create({
   },
   textNextTitle: {
     fontSize: scale(17),
-    color: darkBrown,
+    color: mediumGrey,
     fontWeight: '400',
   },
 });

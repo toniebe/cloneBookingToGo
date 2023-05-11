@@ -1,16 +1,17 @@
 import {Toast} from 'react-native-toast-message/lib/src/Toast';
-import {BASE_URL} from '@env';
+import {BASE_URL, APPLICATION_ID, API_KEY} from '@env';
 
 export async function callApi<T>(
-  version: string,
   url: string,
   method: string,
   body?: any,
 ): Promise<T> {
-  const response = await fetch(`${BASE_URL}/${version}/${url}`, {
+  const response = await fetch(`${BASE_URL}/${url}`, {
     method,
     headers: {
       'Content-Type': 'application/json',
+      'X-Parse-Application-Id': APPLICATION_ID,
+      'X-Parse-REST-API-Key': API_KEY,
     },
     body: JSON.stringify(body),
   });

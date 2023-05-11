@@ -1,4 +1,5 @@
 declare module '@env' {
   export const BASE_URL: string;
-  export const VERSION: string;
+  export const APPLICATION_ID: string;
+  export const API_KEY: string;
 }
