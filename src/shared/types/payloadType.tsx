@@ -88,9 +88,13 @@ export interface payloadBookingHotel {
   createdAt: string;
   updatedAt: string;
   chosen_hotel: {
-    data: getChosenHotelType;
+    data: dataType;
     header: headerType;
   };
+}
+
+export interface dataType {
+  get_chosen_hotel: chosenHotelType;
 }
 
 export interface getChosenHotelType {
@@ -99,4 +103,8 @@ export interface getChosenHotelType {
   chosen_hotel_params: chosenHotelParams;
   chosen_hotel_prices: chosenHotelPrices;
   chosen_hotel_expired: string;
+}
+
+export interface chosenHotelType {
+  data: getChosenHotelType;
 }
