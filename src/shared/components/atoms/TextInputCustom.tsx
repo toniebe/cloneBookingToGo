@@ -1,7 +1,7 @@
 import {Image, StyleSheet, TextInput, TextInputProps, View} from 'react-native';
 import React, {useState} from 'react';
 import {scale, verticalScale} from '@sharedHelper/scaling';
-import {darkBlue, mediumGrey} from '@sharedConstants/colors';
+import {darkBlue, lightGrey, mediumGrey} from '@sharedConstants/colors';
 
 export interface textinputCustomProps {
   secureTextEntry?: boolean;
@@ -13,7 +13,7 @@ const TextInputCustom = ({
   icon,
   ...nativeProps
 }: textinputCustomProps & TextInputProps) => {
-  const [borderColor, setBorderColor] = useState<string>(mediumGrey);
+  const [borderColor, setBorderColor] = useState<string>(lightGrey);
   return (
     <View style={[styles.container, {borderColor: borderColor}]}>
       {icon && (
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderRadius: 10,
+    borderRadius: 3,
     paddingHorizontal: scale(5),
     minHeight: verticalScale(40),
     backgroundColor: 'white',
