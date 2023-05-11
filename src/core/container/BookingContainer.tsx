@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import BookingPresentation from '@presentation/BookingPresentation';
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useLayoutEffect, useState} from 'react';
 import {useSelector} from 'react-redux';
 import {getChosenHotelType} from 'src/shared/types/payloadType';
 import {navigationProps} from 'src/shared/types/navigationType';
@@ -42,8 +42,13 @@ const BookingContainer = ({navigation}: navigationProps) => {
     setSelectedOption(option);
   };
 
-  useEffect(() => {}, [stateBooking]);
+  useEffect(() => {}, [stateBooking, dataOrder]);
 
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerLeft: () => null, // Hide the back button
+    });
+  }, [navigation]);
   // ---- end function for booking -----
   return (
     <BookingPresentation

@@ -32,6 +32,7 @@ const CardEditGuest = ({
     <View style={styles.container}>
       <TouchableOpacity style={styles.dropdownContainer}>
         <DropDownPicker
+          key={1}
           open={open}
           value={valueDropdown}
           items={items}
@@ -46,7 +47,7 @@ const CardEditGuest = ({
       </TouchableOpacity>
 
       <TextInputCustom
-        style={{height: 40, width: '50%'}}
+        style={{height: 40, width: '60%'}}
         value={valueName}
         onChangeText={onChangeValueName}
       />
@@ -66,14 +67,12 @@ export default CardEditGuest;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    backgroundColor: 'khaki',
     justifyContent: 'space-between',
     alignItems: 'center',
     marginVertical: verticalScale(10),
+    width: '100%',
   },
-  textinputContainer: {
-    width: '85%',
-  },
+
   dropdownContainer: {
     width: '25%',
     padding: 0,

@@ -18,11 +18,12 @@ const CardOrder = ({
   phoneNumber = '082320000004',
   actionChangeOrder,
 }: cardOrderProps) => {
+  let parseTitle: string = titleName.toUpperCase() === 'MR' ? 'Tn' : 'Ny';
   return (
     <View style={styles.container}>
       <View>
         <Text style={styles.textTitle}>
-          {titleName}.{name}
+          {parseTitle}.{name}
         </Text>
         <Text style={styles.textDescription}>{email}</Text>
         <Text style={styles.textDescription}>{phoneNumber}</Text>

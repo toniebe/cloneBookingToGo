@@ -32,7 +32,13 @@ const Core = () => {
               headerShown: false,
             }}
           />
-          <Stack.Screen name="Booking" component={BookingContainer} />
+          <Stack.Screen
+            name="Booking"
+            component={BookingContainer}
+            options={{
+              headerLeft: () => null,
+            }}
+          />
           <Stack.Screen
             name="ChangeGuest"
             component={AddGuestContainer}
