@@ -74,6 +74,4 @@
 **Notes**:
 
 1. [The structure uses React container presenter for each screen.](https://medium.com/web-dev-freelancing/react-design-patterns-container-presenter-pattern-e7f2650442d7)
-2. On the home page, the avatar will be stored in local storage using React Native AsyncStorage.
-3. The data on the home page has been saved in the reducer, so it doesn't need API calls anymore.
-4. In the detail page, you can not only change the color of the product but also select a different size.
+2. The data on the booking page has been saved in the reducer, so it doesn't need API calls anymore.
